@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Registrar</title>
+    </head>
+    <body class="register">
+        <div id="register-box">
+            <div id="header-container">
+                <a href="index.html"><i class="fa fa-long-arrow-left fa-lg" aria-hidden="true"></i></a>
+            </div>
+            <div id="header-container">
+                <h1>Cadastre-se para acessar o sistema</h1>
+            </div>
+            <form id="register-form">
+                <div class="full-box">
+                    <label for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off" data-min-length="3" data-required data-email-validate>
+                </div>
+                <div class="half-box spacing">
+                    <label for="name"> Nome </label>
+                    <input type="name" name="name" id="name" placeholder="Digite seu nome" data-max-length="16" data-only-letters>
+                </div>
+                <div class="half-box">
+                    <label for="lastname" id="lastname"> Sobrenome </label>
+                    <input type="name" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="half-box spacing">
+                    <label for="password" name="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" autocomplete="off" data-required data-password-validate>
+                </div>
+                <div class="half-box">
+                    <label for="password-confirm" id="password-confirm">Confirmação de Senha</label>
+                    <input type="password" name="passwordconfirm" id="password-confirm" placeholder="Digite novamente sua senha" autocomplete="off" data-equal="password" data-required>
+                </div>
+                <div class="full-box register-msg">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" id="agreement"> Eu li e aceito os <a href="#"> termos de uso </a></label>
+                </div>
+                <input type="submit" id="register" value="Registrar">
+            </form>
+        </div>
+        <p class="error-validation template"></p>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

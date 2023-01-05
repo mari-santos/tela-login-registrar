@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.register {
+    background-image: url('../img/bg-register-page.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, label {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #08558b;
+}
+
+#login-container, #register-box {
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#register-container {
+    width: auto;
+}
+
+#register-box {
+    width: 50%;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #08558b;
+}
+
+#register-box input:focus {
+    border-bottom: 2px solid #e60084;
+} 
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558b;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+input[id="register"] {
+    background-color: #e60084;
+}
+
+input[id="register"]:hover {
+    background-color: #5c0034;
+    transition: .5s;
+}
+
+.full-box.register-msg input[type="checkbox"]:checked {
+    accent-color: #e60084; 
+}
+
+#social-container, #social-container p {
+    margin-bottom: 20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+#register-box p {
+    margin-bottom: 10px;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.register-msg {
+    display: flex;
+}
+
+.full-box a {
+    color: #e60084;
+}
+
+#agreement {
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
+
+#header-container {
+    display: inline-block;
+}
+
+#header-container:nth-child(1){
+    margin-right: 10px;
+}
+
+#header-container a i {
+    font-size: 24px;
+    vertical-align: baseline;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #register-box {
+        padding: 15px 20px;
+    }
+
+    #login-container, #register-box {
+        width: 60%;
+    }
+
+    .half-box {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #header-container a i {
+        vertical-align: text-bottom ;
+        font-size: 18px;
+    }
+}
